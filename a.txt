@@ -1,0 +1,1554 @@
+17th Mar 2025 (free)
+
+        Updated free loader to support x64 version of the game
+        Updated free menu to include basic Auto Backstab and Silent Aimbot
+
+26th Feb 2025
+
+        Added option to limit perfect bunnyhop jumps in a row (up to 10)
+        Fixed Skinchanger not applying some items in thirdperson view
+
+21th Feb 2025
+
+        Fixed crashing after latest game update
+        Fixed reported regressions with Projectile Aimbot
+        Fixed crash while jumping and being in water
+
+26th Jan 2025
+
+        Fixed a regression that caused 'Rage' AutoBackstab to have limited FOV (Reported by Wilber)
+        Fixed compatibility issue with Steam Deck (Reported by navet)
+
+15th Jan 2025
+
+        Added 'Kill Effect' option to our Skinchanger
+        Added 'Freeze Queue' option under Misc
+        Fixed the 'Lobby' feature: it now displays the 'Add Friend' button for players who are not on your friends list. Once a player is added as a friend, the 'Join' and 'Invite' buttons will reappear for them
+        Updated the Lua API and its documentation
+
+5th Dec 2024
+
+        Added -Vulkan support for rendering and Anti-OBS
+
+4th Dec 2024
+
+        Added new functions and improvements we have in beta into stable LUA API. See changes in documentation.
+        Fixed Anti Aim inticator jittering and showing incorrect angles if 'forward' option is being used
+        Fixed some Anti Aim options being active when in water
+        Disabled TLS 1.0 and TLS 1.1 on our web server (Reported by Hope)
+
+15th Nov 2024
+
+        Reworked DoubleTap; fixed multiple instances where DoubleTap shoots only one bullet
+        Fixed DoubleTap not working first time after reconnecting to a game server
+        Fixed crashing after today's game update
+
+9th Nov 2024
+
+        Reworked Autobackstab: fixed multiple instances where Autobackstab wouldn't activate, and enhanced accuracy
+        Added new websites for suggestions and bug reports (accessible via the Lmaobox menu under Misc -> Links)
+        Fixed Autobackstab activating during Truce mode
+        Fixed Spinbot interfering with movement in bumper car mode
+        Fixed Autostrafe and Bunnyhop impacting movement in ghost mode
+        Fixed Bunnyhop automatically deploying the Parachute when equipped
+        Fixed scoreboard not updating when the Anti-OBS feature is enabled
+        Fixed certain Halloween spells not displaying ESP
+
+19th Oct 2024
+
+        Added lua_unload scriptname console command to manually unload your lua scripts
+        Fixed crashing after today's game update
+
+12th Oct 2024
+
+        Fixed Legit Backtracking regression from last update (thank you Mapk)
+        Fixed Legit Backtracking to always use full size of hitboxes
+
+11th Oct 2024
+
+        Added option to not draw backtracking indicator and backtracking indicator transpacency option
+        Fixed stickies on the grate now auto detonate when a player is below/above the grate
+        Fixed auto-repair not removing sappers from buildings
+        Fixed crashing after today's game update
+
+23rd Sep 2024
+
+        Fixed Legit Backtracking for melee weapons
+
+21th Sep 2024
+
+        Added a search function in the Skinchanger's weapon section
+        Updated Backtrack to include a single main toggle
+        Fixed an issue where Backtrack chams would sometimes appear even when Backtracking was disabled
+        Fixed the toggling of the Nightmode and Custom FOV options
+        Fixed the unboxing simulator; fake crates and keys are now functioning correctly
+        Fixed weapon ESP to correctly display weapon icons
+
+10th Sep 2024
+
+        Added support for Legit Backtracking, Backtracking is now available without Aimbot enabled and you can just shoot Backtracking chams manually now
+        Added option to show only Last backtracking position instead of whole backtracking history
+        Fixed typing in game chat activating some of the feature key binds
+
+29th Aug 2024
+
+        Added a 'Reset Hats' button to remove all hats and items crafted by the Skinchanger
+        Fixed an issue with the Skinchanger not saving hat attributes and unusual effects after restarting the game
+        Fixed the Fake Lag and Double Tap features to use all available ticks at once, making Double Tap faster again
+        Fixed the lobby sharing feature so it now correctly displays available lobbies to join
+        Fixed local demos to show silent aim and to correctly log triggerbot key usage
+        Fixed a regression in our loader that caused the tray icon to never appear. If you experience this issue, please re-download your loader
+        Fixed a regression with the Spy Camera activation distance; it now correctly displays the enemy spy's point of view when a spy is nearby
+        Fixed nospread for Beggar's Bazooka
+
+24th Jul 2024
+
+        Fixed crash raised when crafting a hat in our skinchanger
+
+22nd Jul 2024
+
+        Fixed and re-enabled LUA module for stable users
+        Fixed Backpack expander feature
+
+2nd Jul 2024
+
+        Fixed Bunnyhoping on water (ie. ctf_2fort canals)
+        Fixed Fake Lag and other features dependeded on it
+        Fixed Minigun Spinup option to work without Aim key being set
+
+24th Mar 2024
+
+        Fixed SMAC bypass being stuck in rage mode with older configs
+
+22th Mar 2024
+
+        Fixed issue with Auto-Detonator not releasing mouse2
+
+14th Mar 2024
+
+        Improved SMAC bypass to detect SMAC correctly on more servers
+        Fixed Anti-OBS to work with latest update
+
+12th Jan 2024
+
+        Fixed Region Selector to work with all available datacenters
+
+9th Jan 2024
+
+        Fixed reported chat spammer crash with badly formatted spam.txt file
+        Changed custom spam to randomize starting spam line instead of always starting with first one
+        Added 'World' option for our Region Selector, unlocking all regions at once
+
+18th Dec 2023
+
+        Snow time is now enabled
+        Fixed issue with Triggerbot in some cases shooting in wrong situations
+        Added 'Poor network settings' warning, should show up if network rates are below default
+        Disabled 'Ping Reducer' on community servers with SMAC installed
+
+3rd Dec 2023
+
+        Fixed crashes reported by our users
+
+5th Nov 2023
+
+        Added LUA support into stable version
+        Added 'Edit' button for editing installed lua scripts, it uses text editor associated to lua files in your system
+
+11th Oct 2023
+
+        Added Helloween spells and pumpkins ESP options
+
+27th Jul 2023
+
+        Fixed compatibility with latest game update
+
+13th Jul 2023
+
+        Fixed compatibility with latest game update
+        Changed backtrack indicator to draw all ticks instead of last one only
+        Changed Auto Backstab to target whole enemy hitbox when the enemy is not moving
+
+14th Jun 2023
+
+        Added Crate unboxing simulator (with free boxes and keys)
+        Added new ping reducer with target value option
+        Added social media links and button to send a feedback into misc
+        Changed backtracking indicator to draw whole backtracking history with chams option on
+        Changed 'Hide userinfo in menu' option to also disable 'am ready sounds
+
+24th Mar 2023
+
+        Increased the fire rate limit for supported double tap weapons
+        Fixed some menu options and menu positions not saving into config correctly
+
+2nd Mar 2023
+
+        Fixed compatibility with latest game update
+
+1st Mar 2023
+
+        Reworked our Double Tap to work correctly with supported weapons
+        Fixed Aimbot and Crit Hack to work correctly when Stickybomb launcher force release stickies on full charge
+        Fixed Auto Ready (F4) to work between rounds too not just maps
+        Improved lmaobox menu, some options were renamed, new double tap indicator bar was added
+
+6th Jan 2023
+
+        Fixed compatibility with latest game update
+
+31th Dec 2022
+
+        Fixed compatibility with latest game update
+        Fixed one case of colored models being rendered black
+
+2nd Dec 2022
+
+        Fixed compatibility with latest game update
+
+18th Nov 2022
+
+        Added second Aim Method option for projectile weapons, so you can have silent+ rocket launcher and smooth aim shotgun with one config
+        Added weapon icon as new ESP option
+        Changed ESP layout and positions for most ESP options
+        Changed Direct Hit Aimbot to prefer body hitbox when crit boosted
+        Improved Duck Jump to gain maximum speed ( https://www.youtube.com/watch?v=7z_p_RqLhkA )
+        Fixed Crusader's crossbow projectile hitting walls due to wrong spawn offset
+        Fixed Auto Voting feature
+
+13th Oct 2022
+
+        Changed Hitscan Aimbot to target enemy leg hitboxes when both enemy and local player are not moving
+        Fixed crashing after today's game update
+        Fixed 'Ignore Vaccinator Uber' option not working on enemies with Rocket Launcher
+        Fixed anti-aim thirdperson preview mode appearing with 'Anti-OBS' option enabled
+
+26th Aug 2022
+
+        Fixed Double Tap not working correctly with autoreload enabled
+
+17th Jul 2022
+
+        Fixed 'custom' chat spam not working for some people and added custom chat spammer interval
+
+9th Jul 2022
+
+        Fixed crashing after today's game update
+
+7th Jul 2022
+
+        Changed description of name stealer as it now works on community servers only
+        Removed broken chat-spam options
+        Info panel now shows if anti-aim / anti-backstab is enabled
+
+13th Feb 2022
+
+        Added Directonal (W-A-S-D) auto strafe mode
+        Fixed 'wait for charge' option to work against disguised players, players marked with 'baim' option in playerlist and players using 'fists of steel'
+
+12th Jan 2022
+
+        Added Minigun Tap Fire Aimbot option
+
+10th Dec 2021
+
+        Added matchmaking region selector
+
+9th Dec 2021
+
+        Added additional solid and bold esp box options
+        Fixed Autoshoot not working with Aimbot in Aim-Assist mode
+        Fixed cases where config rename button woudn't work
+
+30th Sep 2021
+
+        Changed maximum Double Tap / Warp charge to 24 ticks
+        Changed EstimateAbsVelocityFn signature for better compatibility with other software
+        Fixed a case where playerlist priority could be set on local player
+        Fixed Truce detection not working when connecting in the middle of match
+
+21st Sep 2021
+
+        Fixed several crashes after recent game update
+
+19th Sep 2021
+
+        Added beta version of Double Tap (always on, on key)
+        Fixed game performance after disabling Anti-OBS during gameplay
+
+1st Aug 2021
+
+        Added dash force recharge key
+        Fixed Namesteal not working in some cases
+
+27th Jun 2021
+
+        Added Auto Ready (F4) for MvM gamemode
+        Added info panel showing state of feature toggle keys
+        Fixed issue with lmaobox menu not rendering with Anti-OBS enabled
+
+12th Jan 2021
+
+        Added options to copy and paste configs from clipboard, allowing easy sharing of your configs with friends
+        Added new yaw / pitch resolver key binds allowing you to switch resolved angle on a single target (closest to your crosshair)
+        Added color modulation option for nightmode
+
+22nd Dec 2020
+
+        Added 'ignore thirdperson' and 'ignore friends' options to 'Disable Aimbot when Spectated' feature
+        Fixed 'Disable Aimbot when Spectated' feature incorrectly detecting thirdperson mode
+        Fixed Dash Key breaking crit key indicator when hold together
+        Fixed cat-bot detection overriding existing player priority (friend, rage)
+        Fixed cat-bot detection priority not persisting in config file
+        Fixed anti aim indicator not drawing with only pitch anti aim enabled
+        Fixed Info Panel not being moveable
+
+7th Dec 2020
+
+        Added custom color for backtrack indicator
+        Added item color option when crafting hats
+        Added esp class option mode "icon" which draw icon above player
+        Added offscreen esp arrows for 'all players' and 'spy only' mode
+        Added testing version of items respawn timer (note the esp position is inaccurate rn, will fix later)
+        Added bullet tracer option into skins tab (you can enable it per weapon)
+        Added killstreak gloweye option
+        Added testing version of info panel
+        Fixed the skinchanger main toggle not disabling all ui components
+        Fixed wrong visiblity check of head hitbox in some corner cases resulting in body shot
+
+9th Sep 2020
+
+        Added option to only draw ESP and aim at on prioty targets (set via playerlist)
+        Added random level to crafted hats in Skinchanger
+        Added pitch resolver method based on using Sniper Rifle's dot
+        Fixed Silent Aim detection by third party sourcemod plugins
+        Fixed Auto Vaccinator incorrectly trigerring blast resistance
+        Fixed Auto Vaccinator to set bullet resistance against incomming arrows
+        Fixed Anti Aim being active on first tick of demoknight charge
+
+19th Jun 2020
+
+        Added cat bot detection and option to only target cat bots
+        Added aim key mode to switch between hold-to-use and toggle
+        Added Vaccinator resistance esp
+        Fixed projectile aimbot wall clipping issue with rocket launcher
+        Fixed projectile aimbot aim crosshair drawn incorrectly for grenade and pipebomb launchers
+        Fixed incorrect projectile size for all demoman weapons
+        Fixed Fake Lag unchoke during attack not working with Medigun
+        Fixed crash happening randomly during game start
+        Fixed bunnyhop not working properly in 2fort's sewers
+        Fixed Spinbot affecting Cow Mangler 5000 secondary fire
+        Fixed some melee weapons not auto attacking when out of primary weapon ammo
+        Changed scoreboard colors to also apply to killfeed
+        Changed lobby menu to include both invite and join buttons
+
+23rd Apr 2020
+
+        Fixed Auto-Backstab accuracy with enabled Fake-Latency
+        Fixed Direct Hit not targeting feet on medium range distance
+        Fixed Chat spam in `After kill` mode
+        Added Dynamic Fakelag option which activates Fake Lag when you start moving (to maximize the distance you teleport)
+        Added Auto-Backstab FOV - maximum FOV means facestab happening more often, smaller FOV means higher backstab accuracy
+        Added crit streaming animation to crit hack indicator
+        Extended Fake Lag Value to 315 miliseconds (22 ticks) - https://streamable.com/wocyh5
+
+8th Mar 2020
+
+        Added Hat Changer with unusual effect selection (similar to existing Skinchanger menu)
+        Added custom antiaim for pitch / yaw
+        Added custom antiaim's indicator color
+        Reorganized misc tab with two sub-tabs: General and Anti-Aim so that there is less clutter. Skins tab with two sub-tabs so that you can differentiate normal weapon skins and hats changer
+        Reworked Weapon ESP to show correct weapon name, including vaccinator / stock medigun
+        Changed Glow, no-scope, no-zoom and other features to be grayed out in the menu if anti obs is enabled
+        Improved SMAC bypass to detect SMAC correctly on more servers
+        Fixed fakelag and micspamming not working together (causing real outgoing lag)
+        Fixed Autostrafer activating on ground when standing on plr_hightower final cart platform
+        Fixed crash related to lmaobox lobby refreshing
+        Fixed backtrack ignoring head hitbox in some cases
+        Fixed MvM tank ESP showing incorrect 'zombie' label
+        Fixed Aimbot with anti-obs enabled still following the no zoom option
+
+4th Oct 2019
+
+        Added "Target Switch Delay" and "First Shot Delay" for legit aimbot gameplay
+        Added 'Killstreak' and 'Botkiller' options into SkinChanger
+        Added several missing legacy skins into SkinChanger
+        Added Backpack and Equip Region options into SkinChanger
+        Changed Aim Method into single option instead of multiple conflicting options
+
+18th Aug 2019
+
+        Added 'Anti-OBS' option to hide lmaobox when streaming
+        Added 'Minigun Spinup' option to keep spinning Minigun when holding Aim Key but not shooting
+        Added additional spots used for visibility checking for Minigun and Flamethrower when using Hitscan aim position
+        Added Wrench support to automatically heal damaged buildings with "Heal/Buff" aimbot option is enabled
+        Added 'Rage' Auto Strafe option to rapidly strafe when jumping forward
+        Added 'Forward' and 'Back' options for manual Yaw resolver in playerlist
+        Fixed Rescue Ranger trying to heal buildings that are being constructed
+        Fixed Auto Vaccinator being triggered by Sticky jumper projectiles and afterburn effects
+        Changed Auto Vaccinator to ignore melee damage (Vaccinator actually doesn't provide resistance against melee)
+        Fixed Fake-Lag menu sub-items color not reflecting main Fake-Lag toggle
+        Fixed Glow to work with high FPS configs that reduced mat_viewportscale
+        Fixed Unsual effect selection in Skinchanger not being correctly translated in non-english version of TF2
+        Fixed Skinchanger to work on existing warpainted weapon
+        Fixed Australium option overriding skin option for weapons that cant be Australium
+
+1st Jul 2019
+
+        Added new Skinchanger menu
+        Added Unusual Effect, Festivizer and Australium options for Skinchanger
+        Fixed 'Unlock Achievement Weapons' button not working
+        Fixed 'Default' config in config list appearing twice in some situations
+        Fixed several reported crashes
+
+2nd May 2019
+
+        Added new Smooth Aimbot acceleration modes - default, constant, fast-end, slow-end
+        Added option to change UI and ESP font case
+        Fixed hitscan detection of head hitbox on scout class
+        Fixed triggerbot not triggering at some situations with spread weapons
+        Fixed triggerbot ignoring the manually set 'friend' status in playerlist
+        Fixed issue where one config could be displayed multiple times in config list
+        Fixed Items ESP not displaying on Dalokohs Bar
+
+28th Mar 2019
+
+        Added pitch/yaw resolver and force body aim for each player in the playerlist
+        Added right click menu to playerlist with options to 'name steal', 'call votekick', 'open profile'
+        Added option to customize radar background transparency
+        Fixed mouse flickering with menu open
+
+22nd Jan 2019
+
+        Added 'blur' style for visual glow effect
+        Added option to customize glow size
+        Added option to draw glow outlined, solid and outlined-solid
+        Added option to select a default lmaobox config that is switched to on start
+        Changed Aimbot traceray to shoot thru breakable glass
+        Changed Projectile Aimbot in 'Draw' or 'Aim+Draw' mode to draw predicted position even if aim key is not hold
+        Fixed Wrangler Aimbot not working together with Backtrack enabled
+        Fixed Backtrack to work on both teams if friendlyfire is enabled
+
+30th Dec 2018
+
+        Added support for -insecure parameter to skip Loader steam checks
+        Fixed Votekick annoucer annoucing kicks from enemy team
+        Fixed Anti Aim Chams sometimes not displaying fake pitch correctly
+        Fixed game crashes reported by our users
+
+21st Dec 2018
+
+        Added Snowflakes
+        Added Real/Fake options for Yaw and Anti-Aim chams indicator
+        Added option to automatically accept lobby invites
+        Added option to reconnect before auto balance happens
+        Added back the Ping Reducer option
+        Added option to disable animation interpolation on players (No Interp)
+        Added option to ignore bonked players
+        Changed Wrangler Aimbot to override Silent Aim+ option
+        Changed Config List to allow unlimited number of configs
+
+28th Sep 2018
+
+        Added anti-aim resolver mode for 'real', 'fake' angles and 'body' to force body aim on players with fake angles
+        Changed fake-lag value to be in miliseconds and increased its max value
+        Fixed Capture Flag ESP drawing when captured by local player
+        Fixed crashes reported by our users during alt-tabbing
+
+8th Sep 2018
+
+        Changed Target Lock to reset current target after Aim Key is released
+
+7th Sep 2018
+
+        Improved performance of Glow and Colored Models visuals
+        Added deadringer state into Condition ESP
+        Fixed AutoShoot not working correctly with Smooth Aim. It now uses raytrace for hitscan and minimal delta for projectiles to achieve better accuracy
+        Fixed name changing via 'name' console command. It no longer resets your name to steam name midgame in any case
+
+2nd Sep 2018
+
+        Fixed issues with Aimbot hitscan accuracy
+        Fixed game crashes reported by our users
+
+18th Aug 2018
+
+        Fixed Fake Yaw and Fake Lag not working correctly after last update
+        Fixed game crashes reported by our users
+
+12th Aug 2018
+
+        Added 'Activate Uber' voice activation option
+        Added option to set minimum health to trigger ubercharge
+        Added main toggle for Fake Latency
+        Added cl_flipviewmodel support for Projectile Aimbot
+        Changed Fake Latency to automatically enable Backtrack to prevent reports of aimbot not working
+        Fixed viewmodel being drawn with Noscope and Custom Fov enabled
+        Fixed Auto Ubercharge triggered after fall damage
+        Fixed Norecoil not working correctly with Smooth Aimbot
+        Fixed Backtrack not working on airborne targets
+        Fixed the head visibility check on backtracked positions
+
+5th Aug 2018
+
+        Added Fake Latency option to extend and shift backtracking
+        Added backtracking support for all scanned hitboxes
+        Added Chams as backtracking indicator
+        Added Custom Menu Background option (tutorial in FAQ)
+        Added Night Mode
+        Added misc option to hide your lmaobox email from the main menu
+        Added Votekick Annoucer option to announce voter names in party chat
+        Changed Anti-Backstab to not disable when Anti-Aim main toggle is disabled
+        Changed Auto-Uber to not trigger on Kritzkrieg
+        Changed left mouse button to increase menu option values instead of decreasing, vice versa for the right button
+        Changed Spy Cam in 'Enemy Spy' mode to not draw the spy model in the cam
+        Changed Powerups ESP to use team colors for dropped Powerups
+        Fixed issue that prevented Lobby sharing with others
+
+4th Jul 2018
+
+        Added main toggle for Anti-Aim
+        Fixed lmaobox main menu losing focus to other windows
+        Fixed ESP not drawing on dropped banana
+        Changed Followbot to change its target if the current target is afk for more than 10 seconds
+        Changed Followbot to finish walking path after target uses teleport. Should allow bot to use the teleport as well
+
+29th Jun 2018
+
+        Changed Auto-Vaccinator to improve resistance switching speed
+        Fixed Crit Hack producing fake crits with regular weapons and fixed not being able to produce crits with streaming weapons (Minigun, Flamethrower, etc.)
+
+24th Jun 2018
+
+        Added 'Rage' mode for Auto Backstab. Melee Aimbot on Knife is now disabled
+        Added Backtrack support for Trigger. Currently supports head hitbox and backstab detection
+        Added 'Aim NPC' option for Aimbot to target Halloween monsters, MvM Tank, Robots, etc.
+        Added party chat message when someone calls a vote on a friend
+        Added Fake Left/Right Yaw Anti-Aim options
+        Changed Aimbot's 'Auto' bodypart preference to always prefer head with Bazaar Bargain
+        Changed projectile gravity calculation with Grenade/Sticky Launcher
+        Fixed Projectile Aimbot range being too small with Grenade/Sticky Launcher
+        Fixed 'Spy Camera' not activating on enemy spies in some situations
+        Fixed Heal/Repair Aimbot not targeting all selected Engineer buildings
+        Fixed Auto-Vaccinator activating Ubercharge in some situations even with Auto-Uber disabled
+        Fixed Auto-Vaccinator to select fire resistance if target is on fire and there are no other source of damage
+        Fixed Crit Hack incorrectly calculating server-sided crit limit
+        Fixed Projectile ESP not working on laser particles
+        Fixed Backtrack ticks drawing on cloaked spies with ESP "Hide Cloaked" option turned on
+        Fixed Melee Aimbot targeting stickies
+
+9th May 2018
+
+        Added Objectives icons into radar
+        Changed Aimbot to force activate when shooting manually even with 'Zoomed only' or 'Wait for charge' enabled
+        Fixed Anti-Aim having impact on HUD capture flag indicators with Thirdperson enabled
+        Fixed another bug that could force-enable Anti-Aim Resolver (thx sulfix)
+
+30th Apr 2018
+
+        Fixed Anti Aim Resolver being force-enabled in some situations. This forced for example 'down' anti-aim to be always resolved as 'fake down'. Now it always respects current resolver state
+        Fixed Edge Detection colliding with nearby players
+        Fixed issue that could cause menu fonts to not load
+
+23rd Apr 2018
+
+        Added option to remove game settings restrictions in competitive gamemode
+        Added corner ESP box style
+        Added ESP backtrack visualization
+        Changed Anti Backstab to match previous behavior
+        Fixed local player name being 'unnamed' after toggling Name Stealer
+        Removed Fake Ping as its no longer functional
+
+7th Apr 2018
+
+        Added Team Only chat spam option
+        Added option to mark Lobby members as friends
+        Changed Time Shift max value to 55
+        Fixed reported random crash after map change
+        Fixed issue with Revolver randomly shooting with Fast Weapon Switch enabled
+        Fixed Auto-Class pick not working with some classes
+        Fixed local ESP drawing with zoomed in Sniper Rifle
+
+1st Apr 2018
+
+        Added 'Always' and 'Force Key' modes for Melee Crit Hack
+        Added 'Big Heads' visual (Note it is disabled on Rifle/Amby).
+
+30th Mar 2018
+
+        Added Custom Sky Box visual option
+        Fixed Lobby menu after recent game update
+
+20th Mar 2018
+
+        Added backtracking support for Aimbot (missed mention from previous update)
+        Added full controller support
+        Added Thirdperson toggle key
+        Changed Anti Backstab to work without changing yaw angle
+        Fixed some Chams colors when set via playerlist
+        Fixed pogo jumping with Duck Jump enabled
+
+6th Mar 2018
+
+        Added option to disable Aimbot when being spectated
+        Added option to change transparency of Aimbot FoV indicator
+        Added support for zero interp set by setcvar command
+        Changed Auto Backstab to also perform non backstab attacks if target HP is below 40 (except for Eternal Reward)
+        Changed Trigger Key to allow it be set to mouse-1 if mouse-1 is not bound to any game command
+        Changed 'View Angles' ESP in 'Snipers' mode to be drawn only when is Sniper Rifle the enemies active weapon
+        Fixed 'View Angles' ESP not working on some computers
+
+15th Feb 2018
+
+        Fixed 'Aimbot FOV Range' ESP to draw correct FOV range with legit SMAC Bypass
+        Fixed Aimbot using incorrect Aimbot FOV range with Sniper Rifle with FOV set to 180
+
+11th Feb 2018
+
+        Added 'Rage' mode for SMAC bypasser allowing unlimited FOV range
+        Fixed Projectile Aimbot hitting wall corners with some weapons due to faulty visibility check
+        Fixed Projectile ESP/Glow not drawing on own Sandman Ball
+
+24th Jan 2018
+
+        Added 'Fast Minigun Spin Up' Misc option
+        Fixed potential crash when using custom chat spam file
+        Fixed Auto Class Pick not working with Heavy
+
+14th Jan 2018
+
+        Fixed Projectile Aimbot gravity calculation of VPhysics projectiles (Grenade Launcher, Sandman, etc.) on servers with custom sv_gravity (Thanks @Khubik for reporting)
+
+13th Jan 2018
+
+        Added 'Auto-Accept Item Drops' feature
+        Added 'Edge Jump' feature
+        Fixed Bunnyhop causing Scout to perform double jump after network lag
+        Fixed Crit Indicator showing on some weapons that have random crits disabled
+        Fixed Anti-Afk not working in some situations
+        Changed 'Time Shift' to work with Aimbot and Trigger. Note that shooting might require Time Shift to be activated for a few seconds.
+        Changed Playerlist to match player colors with their ESP color
+
+7th Jan 2018
+
+        Improved performance of ESP and Visual options (Chams/Glow/Wallhack)
+        Changed Anti-Disguise/Taunting to be applied only to enemy team
+        Changed 'Weapon Switcher' to only change weapon to primary after it was refilled from zero ammo
+
+1st Jan 2018
+
+        Changed 'After kill' chat spam to also trigger on assisted kills
+
+30th Dec 2017
+
+        Added option to use ESP colors in game's scoreboard
+        Added option to show last known enemy team classes in game's scoreboard
+        Fixed issue with FOV calculating that could cause SMAC Aimbot detection
+        Fixed lmaobox menu positioning after game resolution change
+        Fixed game crash that happened after game server change
+
+18th Dec 2017
+
+        Improved bullet damage calculation for 'Wait for charge' feature
+        Fixed game crashes reported by our users
+        Changed Name Stealer to not steal 'cat bot' names
+
+7th Dec 2017
+
+        Added 'Lobby'
+        Fixed case where config list wouldn't show all saved configs
+        Fixed cases where Time Shift wouldn't work
+        Changed Time Shift max adjust value to 40
+
+23rd Nov 2017
+
+        Fixed Aimbot Autoshoot not working with Bow after gameserver change
+        Fixed Radar drawing random entities incorrectly at the center of the radar
+
+22nd Nov 2017
+
+        Fixed Projectile Aimbot visibility check on targets standing next to thin walls/stairs
+        Fixed Aimbot not shooting if is chat opened and no 'Aim Key' is set
+
+17th Nov 2017
+
+        Fixed Aimbot not shooting thru friendly engineer buildings with Sniper Rifle
+        Fixed Aimbot in some corner cases targeting ubered MvM robots
+
+2nd Nov 2017
+
+        Fixed Aimbot issues after today's game update
+
+22nd Oct 2017
+
+        Added Aimbot support for Dragon's Fury
+        Added 'Player Conditions' ESP
+        Added option to draw ESP on local player in Thirdperson mode
+        Changed Aimbot to target Halloween Bosses during Truce period instead of players
+        Changed Aimbot performance on Flamethrower with Silent Aim enabled
+        Restricted Ambassador Aimbot maximum range
+
+21st Oct 2017
+
+        Updated internals for the Jungle Inferno game update
+
+8th Oct 2017
+
+        Added confirmation dialog when deleting a lmaobox config
+        Added ability to perform a factory reset of the 'Default' config
+        Added 'Classic Wallhack' visual option that draws original player models through walls
+
+7th Oct 2017
+
+        Added 'Fake Center' anti-aim option for pitch
+        Fixed health kit ESP not drawing on some models
+        Fixed local engine prediction being inaccurate in some corner cases
+
+17th Sep 2017
+
+        Added support for \n line breaks in the custom chat spam
+        Disabled Aim Key if game chat is open and Aim Key is set to a keyboard key
+
+4th Sep 2017
+
+        Additional fixes for Anti Backstab lag compensation
+        Fixed 'Bottom' ESP text position
+        Optimization of ESP drawing code
+
+31st Aug 2017
+
+        Added lag compensation for Anti Backstab. Should improve backstab detection
+        Replaced 'Centered ESP' option with multi-valued 'ESP Position'
+        Fixed 'Hold' method of Reset Condition Key to stay enabled until the key is released
+
+23rd Aug 2017
+
+        Added option for Medigun Aimbot to only heal players marked as friends
+        Added customizable size for Crit Indicator
+
+15th Aug 2017
+
+        Fixed Aimbot headshoting accuracy in some corner cases
+
+11th Aug 2017
+
+        Added 'Spectator List' option which shows names of people currently spectating you
+        Improved Aimbot visibility check performance
+
+29th Jul 2017
+
+        Added 'Fast Weapon Switch' misc option
+        Added 'Anti Backstab' anti-aim option
+        Added 'Enemy Spy' mode for Spy Camera which will activate Spy Camera if there is enemy spy nearby
+        Fixed Chams not working on player weapons
+        Reworked Crit Indicator
+        Replaced 'Load Item Schema' button with 'reloadschema' console command
+
+25th Jul 2017
+
+        Added Aimbot team selection for weapons with healing or buff effects (Teammates, Enemies, Both Teams)
+        Added %class% string replacement for custom chat spam
+        Fixed custom chat spam not printing whole line with 'custom+empty' mode enabled
+        Fixed Fov and Crit indicator drawing over default game menus
+        Reduced screen jitter with Reset Condition feature
+
+12th Jul 2017
+
+        Fixed Reset Condition in 'Toggle mode' disabling periodically for one tick which caused some exploits not working properly
+        Fixed %name% string replacement for custom chat spam to also work in Always mode. It uses name of last killed target
+        Fixed Aimbot highlight color not affecting Glow
+        Fixed a case where crit hack could produce a fake crit
+
+6th Jul 2017
+
+        Added 'Heal Arrows' feature
+        Fixed Melee crits not working with Sandman
+        Fixed Spinbot messing up with character movement while in water
+        Fixed Spinbot messing up with Melee weapons in some cases
+        Fixed Aimbot used for Buff Banner with specific configuration
+        Fixed gui font not rendering after changing video resolution
+
+4th Jul 2017
+
+        Added back 'Always' mode for Melee Aimbot which is used for Demoknight config
+        Fixed Melee Aimbot activating too early when charging up as Demoman
+        Changed Aimbot to not switch onto different target when charging up as Demoman
+
+2nd Jul 2017
+
+        Fixed another case where would Reset Condition Key cause screen jitter
+
+27th Jun 2017
+
+        Added custom Aimbot target highlight color
+        Added Projectile Aimbot option to draw a predicted target position. Can be used for airshot training and aimbot testing
+        Fixed support for variable pipebomb deploy time (for Quickiebomb Launcher and The Scottish Resistance)
+        Removed Follow Bot target collision prevention to allow a more precise bot movement
+
+22nd Jun 2017
+
+        Added Toggle and Hold mode for Reset Condition Key
+        Reworked Melee Aimbot for better accuracy and full compatibility with other features (such as Silent Aim, Anti-Aims, Fake-Lag etc.)
+
+20th Jun 2017
+
+        Added new Melee Aimbot option which Legit and Rage mode. Legit will hit anything whats in your current range and Rage will hit even targets behind you
+        Fixed 'Ignore Steam Friends' being applied to teammates
+        Fixed ESP Viewangles being draw while taking screenshots
+        Fixed custom Chat Spam not working with long spam messages
+
+17th Jun 2017
+
+        Added Auto Class Picker
+        Added 'Highest Health' priority option for Aimbot
+        Fixed a case where Aimbot would deal body damage instead of headshot with Auto Zoom enabled
+        Fixed a case where Aimbot wouldn't wait enough time to deal headshot damage
+
+12th Jun 2017
+
+        Added Chat Spam trigger mode with 'Always' and 'After Kill' options
+
+11th Jun 2017
+
+        Added weapon 'Skin Changer'
+
+10th Jun 2017
+
+        Added Auto-Uber support for Vaccinator
+        Fixed Aimbot network lag when switching targets with Medigun
+        Changed Medigun Aimbot priority to be always health based
+        Changed Chat Spam option to temporary disable when is game chat open
+
+26th May 2017
+
+        Fixed Aimbot missing randomly when shooting during weapon reload time
+        Fixed Airstuck not working after server change
+
+22nd May 2017
+
+        Added 'Auto Sapper' triggerbot option
+        Added 'Selected Only' mode for Follow bot and additional playerlist column to select who to follow
+
+14th May 2017
+
+        Added 'Custom' option for 'Chat Spam' feature
+        Changed Playerlist to remember players priorities across game sessions
+
+10th May 2017
+
+        Added Custom disconnect message (ie. disconnect whatever..)
+        Fixed Playerlist to show connecting players in team 'Spectators'
+        Fixed Rescue Ranger trying to heal sapped/disabled/building sentries
+        Fixed 'Ignore Teammates' option messing with Aimbot priorities on enemies
+        Changed 'SMAC Detector' to automatically limit Spinbot/Aimbot FOV
+        Changed 'Ignore Deadringer' option to ignore spies ready to perform a fake death
+
+23rd Apr 2017
+
+        Added 'Crit Hack' option to enable crits without holding Crit key
+        Changed 'Crit Key' to suppress crits when not holding the key
+        Fixed 'Crit Indicator' accuracy in some cases
+
+20th Apr 2017
+
+        Fixed performance issue with 'Reset Conditions Key'
+
+19th Apr 2017
+
+        Fixed Colored Models drawing incorrectly when carrying sentry
+        Fixed "Unlock Achievements Items" to work with sv_cheats enabled
+
+18th Apr 2017
+
+        Fixed 'Expose Lobby' feature giving bad invite url in some cases
+        Fixed 'Ignore Uber Vaccinator' option for projectile weapons
+
+17th Apr 2017
+
+        Fixed Colored models not working properly with DirectX 8
+
+16th Apr 2017
+
+        Added Glow for world entities (ammo/medkits/projectiles etc.)
+        Added option to choose from Textured or Flat styled Colored models
+        Fixed local player not drawing in thirdperson mode when zoomed in
+        Fixed Colored models to work on cosmetic items
+
+9th Apr 2017
+
+        Added customizable radar icon background size
+        Added Aim Resolver Toggle Key
+        Added ESP option to toggle names of buildings
+        Changed Edge AA to be separated option allowing you to set different Yaw AA when not near a wall
+        Fixed Bunnyhop not working with no primary weapon equipped
+
+8th Apr 2017
+
+        Added second set of player icons used on radar
+        Added ammo/medkit radar icons
+        Added option to draw projectiles on radar
+        Fixed Sentry/ammo/medkit icons not drawing on radar in some situations
+
+5th Apr 2017
+
+        Improved Projectile Aimbot visibility checking to avoid wall hitting
+        Fixed Bow damage calculation. Now correctly targets body when body damage is enough to kill if Position is set to Auto.
+        Fixed Auto Strafe being active while in Noclip mode
+
+2nd Apr 2017
+
+        Reworked View Lock and Spin Bot features into more generic Anti Aim feature with 12 different options
+
+28th Mar 2017
+
+        Added option to change radar icon size
+        Added 'Edge' option for Viewlock
+        Reorganised Misc section. Moved Thirdperson option into Visuals section
+
+24th Mar 2017
+
+        Changed Aimbot, Triggerbot, Airstuck keys to not trigger when game chat/console is open
+        Fixed a case where 'Reset Conditions Key' wouldn't work correctly
+        Fixed radar icon team glow alignment to be properly visible with all class icons
+
+22nd Mar 2017
+
+        Fixed 'Wait for charge' to work correctly with active mannpower runes
+
+13th Mar 2017
+
+        Added Colored Models draw modes - Always - When Visible - When Invisible
+        Fixed Glow not working together with Colored Models
+        Fixed a memory leak introduced in previous update
+        Fixed a bug which prevented 'name' cvar from being changed manually
+
+6th Mar 2017
+
+        Fixed a case where the 'Ignore Vaccinator Uber' option wouldn't work properly
+        Fixed 'Wait for charge' option to work on sentries
+
+4th Mar 2017
+
+        Added "Sourcemod Anticheat" detection/warning feature
+
+3rd Mar 2017
+
+        Added "Unlock Achievements Items" feature
+        Added 'Reset Conditions Key' feature for resetting character conditions like taunting, afterburn, bleeding, etc...
+        Additional fixes for lmaobox menu and ESP to work anywhere ingame and on all custom HUDs
+
+28th Feb 2017
+
+        Added color options for Bone ESP
+        Fixed lmaobox menu not drawing with specific game menus opened (lobby, backpack, etc.)
+
+24th Feb 2017
+
+        Changed Ubercharge ESP to work with Vaccinator. Ubercharge warning is shown if ubercharge is active with resistence type matching your current weapon
+
+20th Feb 2017
+
+        Fixed slight Aimbot delay in some specific situations
+        Changed Auto-Zoom to not zoom-in if noscope shoot is enough to kill the target
+
+15th Feb 2017
+
+        Added option to block server welcome messages (No MOTD)
+        Fixed nozoom not working randomly
+
+13th Feb 2017
+
+        Fixed loader to inject into last spawned game instance
+
+10th Feb 2017
+
+        Added option to load custom scripts\items\items_game.txt
+        Added "Nospread" support for Grenade/Sticky Launcher.
+        Added "No Zoom" option which removes zoom-in effect without affecting headshotting ability.
+        Added option for custom Team Colors used for ESP/Radar/Visuals.
+        Added option for custom Menu color.
+        Added option to copy your casual/comp lobby invite link into your system clipboard.
+        Added 3D ESP box for players and same box options for buildings.
+        Added additional chat spam options.
+        Fixed "Aim Stickies" option being applied to sniper rifle.
+        Fixed "Spread: Max distance" option being applied to some projectile weapons.
+        Fixed "Auto Disguise" trying to re-disguise after using Grappling Hook.
+        Fixed "Air stuck" local camera jittering.
+        Fixed crash caused by snow flakes of zero size.
+
+18th Dec 2016
+
+        Added Wallhack mode for player models
+        Added 'No Scope' for Sniper rifle
+        Added 'No Hands' visual
+        Added 'Wait for charge' support for Bow
+        Fixed Radar not displaying items that are out of field of view
+        Fixed Colored Models texture not being applied properly
+
+3rd Dec 2016
+
+        Fixed Aimbot for 'Panic Attack' shotgun
+        Changed SpyCam 'Enemy Mode' to only display screen of enemies
+        Changed SpyCam 'Enemy Mode' to respect priority settings set in Playerlist
+        Changed Auto Voting to vote 'no' if kick was called on player marked as Friend
+
+28th Nov 2016
+
+        Added Airstuck hold/toggle key
+        Fixed 'Weapon chooser' option to only work when Follow bot is enabled
+        Tweaked menu options highlighting
+
+1st Nov 2016
+
+        Added aimbot option to ignore ubercharged players with Vaccinator
+
+8th Sep 2016
+
+        Added back Airstuck option
+        Added Viewangles ESP option
+        Fixed flickering issue with Aim Assistance
+
+17th Aug 2016
+
+        Added Radar option to display teammates with team colored background
+        Changed Aim Fov to cover same screen size when zooming in with Sniper rifle.
+        Changed Auto Uber detection algorithm and added option to disable it
+        Fixed Engineer not being able to move buildings with Spinbot active
+
+10th Aug 2016
+
+        Added 'Auto Zoom' option for Sniper Rifle
+        Added option to change Spinbot spinning direction
+        Changed 'Health' priority when using Medigun Aimbot to be able to heal multiple targets equally
+        Fixed another cases of incorrect damage calculation
+
+31st Jul 2016
+
+        Added Medigun Aimbot
+        Added Colored Models (Chams)
+        Added Auto Voting
+        Added Follow Bot
+        Fixed incorrect damage resistance calculation on heavies
+
+16th Jul 2016
+
+        Added Auto Detonator
+        Added option for Auto Airblast to ignore small/big projectiles
+        Added option for Aimbot to prioritize medic enemies
+        Improved Aimbot accuracy when using Grenade Launcher
+        Fixed ESP not working with some custom game HUDs
+
+27th May 2016
+
+        Added outline style for box ESP
+        Added misc View Lock option which makes it harder to headshot you ( https://www.youtube.com/watch?v=AQUrBBFmoyg )
+        Fixed crash related to custom configs
+
+22nd Mar 2016
+
+        Added Aim Assistance mode for Aimbot
+        Fixed Norecoil not working in some situations
+        Fixed Airblast trying to airblast the Cow Mangler
+
+14th Mar 2016
+
+        Added ESP option to always draw Aimbot FOV Range
+        Added Aimbot options to target all Engineer's buildings
+        Added Anti-AFK feature which prevents you from getting kicked when being idle
+        Added two new modes for Name Stealer
+        Fixed Projectile Aimbot to work with Wrap Assassin
+        Fixed Auto Backstab to match server's checking code
+
+27th Jan 2016
+
+        Added 'Ignore Taunting Players' option for Aimbot
+        Fixed Projectile Aimbot gravity compensation being incorrect for some weapons
+        Improved Trigger Shoot performance with Auto reload enabled
+
+17th Jan 2016
+
+        Added extra config slots
+        Added more ESP fonts
+        Fixed FoV circle size being incorrect in some cases
+        Fixed Triggershoot not shooting in some cases
+        Fixed Autoairblast 'Rage mode' airblasting projectiles in a wrong direction
+
+29th Nov 2015
+
+        Reworked Playerlist:
+        * Clicking on player's name in playerlist now changes player's ESP color
+        * Players are now grouped into teams
+        * Playerlist can now be disabled in Misc tab
+        Added "Copy selected config" button into Config tab
+
+30th Oct 2015
+
+        Added generic 'Halloween Item' ESP
+        Changed NPC ESP option to draw ESP on Merasmus, Horsemann, MvM Tank, etc.
+
+6th Oct 2015
+
+        Improved projectile Aimbot for Rocket Launcher
+        Changed Autoshoot to use Sandman's secondary attack
+        Changed Radar to draw spy icon darker if is spy cloaked
+        Fixed Radar not drawing enemy sentries when Sentry ESP is on
+        Fixed game crash related to Bonk/CritaCola
+
+30th Sep 2015
+
+        Projectile Aimbot now works correctly on custom servers (x10 etc.)
+        Added 'Wait for charge' support to Loose Cannon for Donk 2x! effect
+        Fixed 'Wait for charge' option not working correctly in some situations
+        Changed Aimbot to always target jarated, milked, burning and bleeding spy
+
+1st Sep 2015
+
+        Added option for Auto-Backstab to ignore players with Razorback
+        Added Keybind option to switch to specific lmaobox config
+        Fixed some cases where Aimbot wouldn't compensate weapon recoil
+        Fixed a game crash after changing video settings
+        Fixed Triggershoot being inaccurate in some cases with Triggershoot Delay enabled
+
+24th Jul 2015
+
+        Added "Max Distance" option for inaccure weapons, set this value to reasonable distance, more info.
+
+14th Jul 2015
+
+        Enabled Aimbot for Short Circuit
+        Fixed Airblast not working with Short Circuit
+        Fixed Glow option "Health" not working on enemy players and sentries
+
+3rd Jul 2015
+
+        Fixed some features not working after today's game update
+        Replaced "Dropped weapons" ESP with "Dropped ammo" ESP
+
+25th Jun 2015
+
+        Fixed several Config selector bugs and crashes
+
+22nd Jun 2015
+
+        Increased stickybomb priority
+        Disabled Aimbot on weapons with 100% damage penalty
+        Changed Fakelag to not delay weapon shooting
+        Fixed issues with Ambassador's body part selection
+        Fixed Triggershoot body part selection
+        Fixed Radar not working with ESP disabled
+
+4th Jun 2015
+
+        /forum/v/discussion/1252/4th-jun-2015-update/p1
+
+16th Apr 2015
+
+        Fixed Weapon ESP causing game to crash
+        Changed Aimbot to not shoot when bonked or stunned. (*)
+
+10th Apr 2015
+
+        Fixed missing Powerup ESP (*)
+        Fixed Grapple hook not working properly with Spinbot (*)
+        RIP Winter.
+
+13th Feb 2015
+
+        Loader hotfix for -1000 error code after this week's Windows updates
+
+10th Feb 2015
+
+        Added Power Ups ESP
+        Added Bones ESP
+        Added Dropped Weapons ESP
+        Fixed Aimbot targeting ubered players in Mannpower
+        Minor bugfixes and performance improvements
+
+23rd Dec 2014
+
+        Added Spy Camera with various settings
+        Added Auto Strafe
+        Added Duck Jump
+        Snow.
+
+9th Dec 2014
+
+        Ducks. Ducks esp. Hell yeah.
+
+21st Nov 2014
+
+        Fixed minor issues with Melee and Wrangler Aimbot
+        Fixed Wrangler Aimbot autoshooting even when sentry had no ammo
+        Fixed Wrangler Aimbot not firing rockets
+        Fixed several minor issues with lmaobox Menu
+
+24th Oct 2014
+
+        Fixed some crashing issues
+
+23rd Oct 2014
+
+        Added 'Halloween Gift' esp option
+
+12th Oct 2014
+
+        Added player list. You can now set Aimbot to ignore or have higher priority on selected players.
+        Added list of a few servers where we can play together ♥
+
+4th Oct 2014
+
+        Changed The Hitman's Heatmaker Auto Aim Position logic to respect the damage penalty
+        Changed 'Wait for Charge' option to wait a bit more on enemies with Darwin's Danger Shield equipped or healed with Vaccinator (Thanks Lance for testing :3)
+
+30th Sep 2014
+
+        Corrected Projectile Aimbot prediction on targets with BASE Jumper active
+
+26th Sep 2014
+
+        Moveable Menus. You can now change position of radar and menus with your mouse
+        Projectile Aimbot - fixed gravity compensation for Loch-n-Load and Loose cannon
+
+7th Sep 2014
+
+        Added "Lmaobox Menu Key" option (you can now open lmaobox menu with any keyboard key or mouse button)
+        Fixed Aimbot/Triggerbot issues caused by previous update
+        Fixed Thirdperson mode not working after respawn
+        Changed glow effect to use "Friends esp" color on friends
+
+29th Aug 2014
+
+        Overall improvements to Projectile Aimbot
+        Fixed projectile weapons attempting to destroy stickies with "Aim Stickies" enabled
+        Fixed weapons accuracy for "Silent Aim Spectators"
+        Fixed Aimbot not working properly with Bows when Aim Key set to Mouse1
+        Added option to control lmaobox menu with mouse input
+        Fixed nospread not working with certain weapons
+        Removed automatic "Rage Target" selector (Will be replaced with something more accurate)
+        Changed "Classic" to only aim at head when fully charged
+        More Conga fun!
+
+31st Jul 2014
+
+        Improved accuracy of all Triggerbot features with 'Aim FPS Correction' enabled
+
+18th Jul 2014
+
+        Improved Silent Aimbot performance
+        Reversed changes of Aim Fov logic
+        Stability and performance improvements
+
+16th Jul 2014
+
+        Added 'Disguise after backstab' option for Auto Backstab
+
+10th Jul 2014
+
+        Added option to Aim at Robots
+        Added option to Aim at Sentry Busters
+        Added team colored glow
+        Added option for white ESP font
+        Added Arial font option
+        Fixed Glow causing FPS lag
+        Fixed Autoreload messing with Silent Aim
+        Fixed nospread not working with the Baby Face's Blaster
+        Changed "Structure" ESP option to show robots
+        Decreased Aimbot priority of Phlog Pyro while taunting
+
+30th Jun 2014
+
+        Fixed issue where lmaobox settings couldn't be saved correctly
+        Fixed a miscalculation in projectile prediction code
+
+22nd Jun 2014
+
+        Added support for new Love and War weapons
+        Added 'Aim FPS Correction' which improves Aimbot accuracy on computers with lower performance
+
+18th Jun 2014
+
+        Fixed Aimkey and MvM Money ESP and other minor issues
+
+12th Jun 2014
+
+        Fixed some features not working after today's game update
+        Fixed Glow effect not working in some situations
+        Fixed some Aimbot detections on gameservers with SMAC
+        Fixed rare TF2 font loading issue
+        Changed ammo/health ESP option to work with Heavy's sandvich and steak
+        R.I.P. TauntSlide
+
+17th May 2014
+
+        Fixed crashing after today's game update
+
+15th May 2014
+
+        Added Infinite Bonk! key bind
+        Fixed SMAC kick/ban issues
+
+8th May 2014
+
+        Fixed Auto Sticky Detonation not working sometimes
+        Changed Name Steal to work in Spectator mode
+        Minor lmaobox menu changes
+
+7th Apr 2014
+
+        Added MvM Menu key
+        Added automatic cl_interp setting to improve Auto-Airblast accuracy
+        Fixed Auto-Airblast trying to blast arrows that are in walls
+        Fixed weapon damage calculation on servers with tf_damage_disablespread
+        Fixed Structure ESP option not working properly in some situations
+
+16th Mar 2014
+
+        Fixed Aimbot prediction not working with Loose Cannon
+        Fixed MvM Money ESP not drawing in some situations
+        Stability and performance improvements
+
+27th Feb 2014
+
+        Changed Silent Aim so aimbot is no longer visible during demo playback
+        Changed Health Bar to change to team color on invulnerable targets
+        Fixed Aimbot not shooting through MvM Revive Tombstone
+        Fixed TriggerBot affecting demo recording
+
+20th Feb 2014
+
+        Added Infinite Bonk!
+
+2nd Feb 2014
+
+        Added second option for Voicemenu Spam
+        Changed Auto Sticky Detonation to work with any class (for Randomizer servers)
+        Changed Auto Sticky Detonation to ignore Sticky Jumper
+        Changed Medic's Ubercharge ESP to work with any active weapon
+        Fixed Melee Aimbot not working with Silent Aimbot
+        Fixed Nospread not working with Scout's Shortshop
+
+17th Jan 2014
+
+        Added ability to scroll through menu options by holding arrow keys
+        Added "Big cash" option for some extra upgrade money in MvM
+        Fixed gravity calculation for projectile aimbot
+        Fixed triggerbot ignoring aimbot settings
+        Changed ambassador aim location to "body" when headshot cooldown is still active
+        Changed Sniper and Huntsman to aim at body when "auto" is selected, if a headshot isn't neccessary to kill target
+        Increased priority for medics in MvM to prevent attacking giants first
+        Tweaked airblast minimum distance
+
+30th Dec 2013
+
+        Fixed Christmas Noisemaker Spam not working
+        Added Achievements Spam
+
+23rd Dec 2013
+
+        Fixed Minigun Firing speed
+        Fixed smooth aim not working in some situations
+        Increased Radar range
+
+20th Dec 2013
+
+        Increased priority on snipers while using distance Aimbot priority
+        Changed Aimbot to ignore dead players who were respawned as ghosts
+        Changed Aimbot to ignore MvM sentrybuster which can't be destroyed
+        Changed Aimbot to ignore sticky bombs which are way too far
+        Changed Festive Ambassador to aim at head hitbox
+        Decreased font size of ammo/medkit ESP
+        Added MvM money ESP
+        Added 'Fake Lag' feature (makes you laggy for other players, therefore harder to kill)
+        Added TriggerBot key
+        Added option to use any keyboard key or mouse button with Aimbot and Triggerbot
+        Added bind to F8 which disables lmaobox logo in Main Game Menu (useful when you are recording and such)
+
+5th Dec 2013
+
+        Added Aimbot Position with Automatic / Head only / Body only options
+        Fixed stability issues
+
+27th Nov 2013
+
+        Fixed spinbot affecting pipebombs/arrows deployment
+        Fixed Aimbot not shooting through Medic's Shield
+        Fixed Sniper rifle not shooting on full charge while targeting MvM giants
+        Added ESP color to show current Aimbot target
+        Changed Bunnyhop to prevent SMAC detections
+        Changed Autoshoot to work correctly with Smooth Aim
+
+22nd Nov 2013
+
+        Added missing option to enable/disable Projectile Aimbot
+        Fixed not being able to disable Big Heads mode
+
+9th Nov 2013
+
+        Fixed lmaobox not working after game update
+
+30th Oct 2013
+
+        Updated Aimbot to aim at teammates if mp_friendlyfire is set to 1
+        Fixed stability issues
+
+27th Oct 2013
+
+        Updated Auto Airblast - Engineer's Short Circuit now destroys projectiles
+        Added Thirdperson view
+        Fixed Mouse2 Aimkey
+
+25th Oct 2013
+
+        Improved Aimbot/Triggerbot/Airblast accuracy in some situations
+        Bugfixes and performance improvements
+
+21st Oct 2013
+
+        Added Silent Aim support for people who are spectating you
+        Added partial autoshoot support for Bow, PipebombLauncher and Crossbow
+        Fixed a bug where Sniper Wait For Charge would not wait for minimum charge to kill target with headshot
+        Changed namestealer to not add extra space at the end
+        Changed AutoSticky Detonation to work when it's not active weapon and fixed cause when it wasn't detonating fast enough
+        Fixed Rage Target option not working
+
+6th Oct 2013
+
+        Added multiple options for Auto-Airblast - Off/Legit/Rage - with Rage you don't need to aim
+        Added Wrangler aimbot
+        Added range limit for The Short Circuit
+        Removed delay between shooting stickies
+        Rocket Launcher now targets body if target isn't on ground
+
+20th Sep 2013
+
+        Increased Auto Airblast range
+        Added Auto Sticky Detonation
+
+11th Sep 2013
+
+        Fixed collision detection in Projectile Aimbot code
+        Stability and performance improvements
+
+28th Aug 2013
+
+        Fixed crash after today's game update
+
+26th Aug 2013
+
+        Changed 'clean screenshots' feature to hide glow effect from players
+        Improved Projectile Aimbot, corrected gravity calculation and target dropspot
+        Stability improvements
+
+14th Aug 2013
+
+        Released new loader for more security and stability
+        Improved range check for Airblast
+        Some small graphical changes
+        Other minor stuff I have changed since the last changelog but I don't recall
+
+11th July 2013
+
+        Fixed Aimbot after latest game update.
+
+3rd July 2013
+
+        Improved Auto-Backstab check
+        Changed Aimbot to aim only when is weapon able to shoot
+        Changed Triggerbot to use Aimbot filters ( Ignore Friends/Disguised/etc. )
+
+30th June 2013
+
+        Proper latency compensation for Auto-Airblast
+        Changed Radar to draw Rockets (useful in dodgeball)
+        Fixed Radar jittering
+        Added option to disable Ammo/Medkit esp
+        Changed Huntsman to aim at head
+        Changed Rocket Launcher to aim at foots
+        Improved stability on modded servers
+
+20th June 2013
+
+        Fixed issue with norecoil option not working in some situations
+        Fixed airblast prediction using inaccurate variables
+        Added support for more projectile weapons
+        Added melee range check for triggerbot, disabled triggerbot for Spy's Knife
+
+14th June 2013
+
+        Added Aimbot option for next target selection priority based on distance to enemy, distance from crosshair and enemy health.
+        Minor BOX ESP changes
+
+7th June 2013
+
+        Changed cl_interp so it can be changed when playing.
+        ( http://teamfortress.tv/forum/thread/8712-interp-toggle-exploit )
+
+31st May 2013
+
+        Improved Projectile Aimbot, added support for Huntsman ( http://youtu.be/TN5u64SmFN4)
+        Changed Triggerbot to ignore Projectile weapons
+        Changed Aimbot priority for sticky bombs, now it targets Sentries first
+
+25th May 2013
+
+        Added better BOX ESP
+        Changed ESP text position to fit the BOX ESP
+        Added Center ESP option for those who don't want to use BOX ESP style
+        Added HP Bar option for Health ESP
+        Tweaked minimal Airblast trigger distance
+        Fixed autoshoot shooting with minigun while having no ammo
+        Fixed BONK! triggering aimbot
+        Added Taunt Slide option
+
+14th May 2013
+
+        Fixed lmaobox to work after today's game update
+        Fixed spinbot to make it work with airblast
+        Tweaked the Box ESP
+        Fixed non-zoomed sniper only aiming at head
+        Infinite BONK! is now activated even after weapon switch
+
+9th May 2013
+
+        Fixed aimbot's priority for heavy being too high in MvM
+        Changed Infinite Bonk! feature to be able to taunt
+        Infinite Uber feature now works with Kritzkrieg
+
+7th May 2013
+
+        Fixed crash related to radar
+        Removed dependency on some Windows libraries
+        Changed Rage Bot option to show names instead of numbers
+
+5th May 2013
+
+        Added Infinite Bonk! feature
+        Added whole new Auto-Airblast method
+        Added two new Aimbot options for Sniper Rifle
+        Added UTF8 support for Name ESP
+        Changed menu to make it working while not connected to any server
+
+Build 1.5 Milestone
+
+        Removed watermark
+        Added noisemaker
+        Added velocity prediction
+        Added ping-mask
+        Added FoV and smooth aimbot options for legit gameplay
+        Added Basic projectile aimbot
+        Added auto-airblast
+        Improved spinbot to spin in both X and Y axes
+        Improved triggerbot accuracy
+        Rewrited menu with more options and submenus support
+        Changed chat spam to be disabled by default
+        Aimbot:
+        Players now have priority over Sentries and Stickies
+        Player priorities are based on the distance (nearest first)
+        Hackers (marked with yellow esp) do have top aimbot priority, use 'rage bot' option to mark those players
+        Improved accuracy while speedhacking
+        Visuals:
+        Added simple box ESP
+        Added steam id ESP
+        Fixed glow to not be shown on screenshots while having 'clean screenshots' enabled
+        Fixed esp being stucked in top-left corner in some situations
+
