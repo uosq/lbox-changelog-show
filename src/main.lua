@@ -1,53 +1,81 @@
+--- made by navet
+
 local raw_link = "https://raw.githubusercontent.com/uosq/lbox-changelog-show/refs/heads/main/changelog_table.lua"
 
---- get the most 3 recent logs
+-- amount of most recent logs to show
 local amount = 3
 
 local changelog = load(http.Get(raw_link))()
 assert(type(changelog) == "table", "Changelog is not a table!")
 
-for i = 1, #changelog do
-    local title = changelog[i][1]
-    print(title)
-    for j = 2, #changelog[i] do
-        print(changelog[i][j])
-    end
+local font = draw.CreateFont("TF2 BUILD", 14, 500)
 
-    print("---")
-end
-
-local font = draw.CreateFont("Arial", 12, 500)
+-- padding around text inside window
+local padding_x, padding_y = 15, 15
+-- spacing between entries
+local spacing = 8
 
 callbacks.Register("Draw", function ()
     draw.SetFont(font)
 
     local sw, sh = draw.GetScreenSize()
-    local y = nil
 
+    -- measure text total needed for window size
+    local content_width, content_height = 0, 0
     for i = 1, amount do
         local title = changelog[i][1]
-        local titlex
         local tw, th = draw.GetTextSize(title)
-        titlex = ((sw * 0.5) - (tw * 0.5))//1
-        if y == nil then
-            y = ((sh * 0.5) - 200)//1
-        end
-
-        draw.Color(255, 255, 255, 255)
-        draw.Text(titlex, y, title)
-        y = y + th + 10
+        content_width = math.max(content_width, tw)
+        content_height = content_height + th + spacing
 
         for j = 2, #changelog[i] do
             tw, th = draw.GetTextSize(changelog[i][j])
-            local x = ((sw*0.5) - (tw*0.5))//1
+            content_width = math.max(content_width, tw)
+            content_height = content_height + th + spacing
+        end
+        content_height = content_height + spacing -- extra gap between logs
+    end
 
-            draw.Color(0, 0, 0, 255)
-            draw.FilledRect(x - 10, y - 10, x + (tw)//1 + 10, y + (th)//1 + 10)
+    -- final window dimensions
+    local win_w = content_width + padding_x * 2
+    local win_h = content_height + padding_y * 2
+    local win_x = (sw - win_w) // 2
+    local win_y = (sh - win_h) // 2
+
+    -- background window
+    draw.Color(30, 30, 30, 253)
+    draw.FilledRect(win_x, win_y, win_x + win_w, win_y + win_h)
+
+    -- border
+    draw.Color(136, 192, 208, 255)
+    draw.FilledRect(win_x, win_y, win_x + win_w, win_y + 2) -- top
+    draw.FilledRect(win_x, win_y + win_h - 2, win_x + win_w, win_y + win_h) -- bottom
+    draw.FilledRect(win_x, win_y, win_x + 2, win_y + win_h) -- left
+    draw.FilledRect(win_x + win_w - 2, win_y, win_x + win_w, win_y + win_h) -- right
+
+    -- draw text
+    local y = win_y + padding_y
+    for i = 1, amount do
+        -- title
+        local title = changelog[i][1]
+        local tw, th = draw.GetTextSize(title)
+        local tx = win_x + (win_w - tw)//2
+        draw.Color(235, 203, 139, 255) -- yellowish for titles
+        draw.Text(tx, y, title)
+        y = y + th + spacing
+
+        -- entries
+        for j = 2, #changelog[i] do
+            local text = changelog[i][j]
+            tw, th = draw.GetTextSize(text)
+            tx = win_x + (win_w - tw)//2
 
             draw.Color(255, 255, 255, 255)
+            draw.Text(tx, y, text)
 
-            draw.Text(x, y, changelog[i][j])
-            y = y + th + 10
+            y = y + th + spacing
         end
+
+        y = y + spacing -- extra space between logs
     end
 end)
