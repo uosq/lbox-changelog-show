@@ -21,6 +21,13 @@ local padding_x, padding_y = 15, 15
 -- spacing between entries
 local spacing = 8
 
+local function TextShadow(x, y, text)
+    draw.Color(46, 52, 64, 255)
+    draw.Text(x + 1, y + 1, text)
+    draw.Color(236, 239, 244, 255)
+    draw.Text(x, y, text)
+end
+
 callbacks.Register("Draw", "changelog_window", function ()
     draw.SetFont(font)
 
@@ -69,18 +76,18 @@ callbacks.Register("Draw", "changelog_window", function ()
     local mx, my = table.unpack(input.GetMousePos())
     for _, tab in ipairs(tabs) do
         local isActive = (activeTab == tab)
-        if isActive then
-            draw.Color(76, 86, 106, 255)
-        else
-            draw.Color(59, 66, 82, 255)
-        end
+        draw.Color(136, 192, 208, 255)
         draw.FilledRect(tab_x, tab_y, tab_x + tab_w, tab_y + tab_h)
 
         local tw, th = draw.GetTextSize(tab)
         local tx = tab_x + (tab_w - tw)//2
         local ty = tab_y + (tab_h - th)//2
         draw.Color(236, 239, 244, 255)
-        draw.Text(tx, ty, tab)
+        if (isActive) then
+            TextShadow(tx, ty, string.format("( %s )", tab))
+        else
+            TextShadow(tx, ty, tab)
+        end
 
         -- handle click
         if mx >= tab_x and mx <= tab_x + tab_w and my >= tab_y and my <= tab_y + tab_h then
