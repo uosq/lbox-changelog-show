@@ -8,7 +8,7 @@ local amount = 3
 local changelog = load(http.Get(raw_link))()
 assert(type(changelog) == "table", "Changelog is not a table!")
 
-local font = draw.CreateFont("TF2 BUILD", 14, 500)
+local font = draw.CreateFont("TF2 BUILD", 12, 500)
 
 -- padding around text inside window
 local padding_x, padding_y = 15, 15
