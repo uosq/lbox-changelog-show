@@ -15,7 +15,7 @@ local padding_x, padding_y = 15, 15
 -- spacing between entries
 local spacing = 8
 
-callbacks.Register("Draw", function ()
+callbacks.Register("Draw", "changelog", function ()
     draw.SetFont(font)
 
     local sw, sh = draw.GetScreenSize()
@@ -48,10 +48,18 @@ callbacks.Register("Draw", function ()
 
     -- border
     draw.Color(136, 192, 208, 255)
-    draw.FilledRect(win_x, win_y, win_x + win_w, win_y + 2) -- top
+    draw.FilledRect(win_x, win_y - 21, win_x + win_w, win_y + 2) -- top
     draw.FilledRect(win_x, win_y + win_h - 2, win_x + win_w, win_y + win_h) -- bottom
     draw.FilledRect(win_x, win_y, win_x + 2, win_y + win_h) -- left
     draw.FilledRect(win_x + win_w - 2, win_y, win_x + win_w, win_y + win_h) -- right
+
+    --- changelog text
+    draw.Color(46, 52, 64, 255)
+    local header = "changelog"
+    local hw, hh = draw.GetTextSize(header)
+    local hx = win_x + (win_w - hw)//2
+    local hy = win_y - 20 + ((20 - hh)//2)
+    draw.Text(hx, hy, header)
 
     -- draw text
     local y = win_y + padding_y
@@ -77,5 +85,24 @@ callbacks.Register("Draw", function ()
         end
 
         y = y + spacing -- extra space between logs
+    end
+
+    local btnw, btnh = 15, 15
+    local btnx, btny = win_x + win_w - btnw - 5, win_y - 21 + ((21 - btnh)//2)
+
+    draw.Color(191, 97, 106, 255)
+    draw.FilledRect(btnx, btny, btnx + btnw, btny + btnh)
+
+    local tw, th = draw.GetTextSize("x")
+    draw.Color(255, 255, 255, 255)
+    draw.Text(btnx + (btnw//2) - (tw//2), btny + (btnh//2) - (th//2), "x")
+
+    local m = input.GetMousePos()
+    local mx, my = m[1], m[2]
+
+    if (mx >= btnx and mx <= btnx + btnw and my >= btny and my <= btny + btnh) then
+        if (input.IsButtonDown(E_ButtonCode.MOUSE_LEFT)) then
+            callbacks.Unregister("Draw", "changelog")
+        end
     end
 end)

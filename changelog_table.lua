@@ -28,7 +28,8 @@ return {
         "Added Unicode character support in all Skinchanger search fields",
         "Added dropdown menus in the Lmaobox UI for selecting options with your mouse",
         "Updated the follow bot so it copies the target's viewangles while walking",
-        "Changed 'Heal/Buff Weapons' default value to 'Both Teams', removed Wrench from this feature and added info panel warning if this option is affecting your current weapon",
+        "Changed 'Heal/Buff Weapons' default value to 'Both Teams',",
+        "removed Wrench from this feature and added info panel warning if this option is affecting your current weapon",
     },
 
     {
