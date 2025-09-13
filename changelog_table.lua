@@ -1,5 +1,10 @@
 return {
     {
+        "12th Sep 2025 - Beta",
+        "Radar now has height indicator, zoom option (-10x/10x), there are two designs you can choose from",
+    },
+
+    {
         "2nd Sep 2025",
         "Added missing servers into our region selector - Atlanta, Buesnos Aires, Helsinki, Korea",
         "Added 'Rain Effect' option into Visuals tab",
