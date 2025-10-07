@@ -2,6 +2,7 @@ return {
     {
         "7th Oct 2025 - Beta",
         "Fixed melee triggerbot not working on Scout's Sandman",
+        "Fixed antiaim fake up/down"
     },
 
     {
