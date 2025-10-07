@@ -1,5 +1,16 @@
 return {
     {
+        "7th Oct 2025 - Beta",
+        "Fixed melee triggerbot not working on Scout's Sandman",
+    },
+
+    {
+        "25th Sep 2025 - Beta",
+        "Added 'Visible ESP'",
+        "Added 'Anti Aim Key' and 'Anti Aim Key Mode'",
+    },
+
+    {
         "12th Sep 2025 - Beta",
         "Radar now has height indicator, zoom option (-10x/10x), there are two designs you can choose from",
     },
@@ -71,7 +82,7 @@ return {
         "Fixed a reported crash when exiting the game; exiting should now be faster",
     },
 
-        {
+    {
         "17th Mar 2025",
         "(free)",
         "Updated free loader to support x64 version of the game",
