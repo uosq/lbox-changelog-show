@@ -1,5 +1,25 @@
 return {
 	{
+		"31st Oct 2025",
+		"Added support for crafting, equipping, and using taunts in the Skinchanger",
+		"Added Unbox Simulator in the Skinchanger to open crates and get unusuals",
+		"Added item preview when crafting hats or items in the Skinchanger",
+		"Added Anonymous Mode to hide player names during recording or streaming",
+		"Added Visible Only option for Player ESP",
+		"Added Zoom Level, Height Indicator, and MvM Money options to the Radar",
+		"Added Anti-Aim toggle key",
+		"Added Anti-OBS support for all loaded LUA scripts",
+		"Fixed Skinchanger crafting not working in the main menu when not connected to a server",
+		"Fixed Anti-Aim indicator not showing fake up/down properly",
+		"Fixed melee triggerbot not working for Sandman and Wrap Assassin",
+		"Fixed custom skybox appearing in screenshots when Clear Screenshot is enabled",
+		"Fixed config import issues in regions with restricted internet access",
+		"Fixed colored models appearing in Kill Cam screenshots",
+		"Fixed High Priority glow not using the yellow color correctly",
+		"Fixed Open Profile in the player list opening the Steam profile repeatedly on some devices",
+	},
+
+	{
 		"14th Oct 2025 - Beta",
 		"Added fake taunts to skinchanger",
 	},
