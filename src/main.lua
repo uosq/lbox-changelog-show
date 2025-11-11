@@ -5,7 +5,7 @@ local beta_changelog_link = "https://raw.githubusercontent.com/uosq/lbox-changel
 local lua_link       = "https://raw.githubusercontent.com/uosq/lbox-changelog-show/refs/heads/main/lua_table.lua"
 
 -- amount of most recent logs to show
-local amount = 3
+local amount = 2
 
 local changelog      = load(http.Get(changelog_link))() --- stable changelog
 local beta_changelog = load(http.Get(beta_changelog_link))() --- beta changelog
