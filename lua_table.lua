@@ -1,19 +1,19 @@
 return {
     {
-        "2nd Jun 2025",
+        "Jun 2 2025",
         "Added CreateTempEntityByName",
         "Added callback 'ProcessTempEntities'",
     },
 
     {
-        "11th Apr 2025",
+        "Apr 11 2025",
         "Added http.GetAsync",
         "Added GetInvisibility() / SetInvisibility into entity documentation",
         "Fixed examples in client class",
     },
 
     {
-        "15th Jan 2025",
+        "Jan 15 2025",
         "Fixed entity.ShouldDraw() incorrectly requiring int parameter",
         "Fixed item.SetAttribute to correctly accept string attribute such as item name",
     },

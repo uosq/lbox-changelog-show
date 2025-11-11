@@ -1,6 +1,17 @@
 return {
 	{
-		"31st Oct 2025",
+		"Nov 11 2025 - Beta",
+		"Local lua tab now has scroll bar"
+	},
+
+	{
+		"6 Nov 2025 - Beta",
+		"Reworked LUA tab: Now has 'STORE' and 'LOCAL' tab",
+		"Luas installed from the store autoload on startup",
+	},
+
+	{
+		"31 Oct 2025",
 		"Added support for crafting, equipping, and using taunts in the Skinchanger",
 		"Added Unbox Simulator in the Skinchanger to open crates and get unusuals",
 		"Added item preview when crafting hats or items in the Skinchanger",
