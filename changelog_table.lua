@@ -1,5 +1,13 @@
 return {
 	{
+		"Nov 11 2025 - Changelog View",
+		"Ignore if on Lmaobox Beta with the Store version",
+		"Changelog View has a new update",
+		"If you're using the old version, please",
+		"download the new one",
+	},
+
+	{
 		"31 Oct 2025",
 		"Added support for crafting, equipping, and using taunts in the Skinchanger",
 		"Added Unbox Simulator in the Skinchanger to open crates and get unusuals",
