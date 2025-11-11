@@ -5,13 +5,13 @@ return {
 	},
 
 	{
-		"6 Nov 2025 - Beta",
+		"Nov 6 2025 - Beta",
 		"Reworked LUA tab: Now has 'STORE' and 'LOCAL' tab",
 		"Luas installed from the store autoload on startup",
 	},
 
     {
-		"14th Oct 2025 - Beta",
+		"Oct 14 2025 - Beta",
 		"Added fake taunts to skinchanger",
 	},
 
