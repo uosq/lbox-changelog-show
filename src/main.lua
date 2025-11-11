@@ -1,18 +1,21 @@
 --- made by navet
 
 local changelog_link = "https://raw.githubusercontent.com/uosq/lbox-changelog-show/refs/heads/main/changelog_table.lua"
+local beta_changelog_link = "https://raw.githubusercontent.com/uosq/lbox-changelog-show/refs/heads/main/beta_changelog_table.lua"
 local lua_link       = "https://raw.githubusercontent.com/uosq/lbox-changelog-show/refs/heads/main/lua_table.lua"
 
 -- amount of most recent logs to show
 local amount = 3
 
-local changelog     = load(http.Get(changelog_link))()
-local lua_changelog = load(http.Get(lua_link))()
-assert(type(changelog)     == "table", "Changelog is not a table!")
-assert(type(lua_changelog) == "table", "Lua changelog is not a table!")
+local changelog      = load(http.Get(changelog_link))() --- stable changelog
+local beta_changelog = load(http.Get(beta_changelog_link))() --- beta changelog
+local lua_changelog  = load(http.Get(lua_link))() --- lua changelog
+assert(type(changelog)      == "table", "Stable changelog is not a table!")
+assert(type(beta_changelog) == "table", "Beta changelog is not a table!")
+assert(type(lua_changelog)  == "table", "Lua changelog is not a table!")
 
 -- ui state
-local activeTab = "changelog" -- or "lua"
+local activeTab = "stable" -- or "beta" or "lua"
 
 local font = draw.CreateFont("Arial", 12, 1000, FONTFLAG_GAUSSIANBLUR | FONTFLAG_ANTIALIAS)
 
@@ -32,7 +35,16 @@ callbacks.Register("Draw", "changelog_window", function ()
     draw.SetFont(font)
 
     local sw, sh = draw.GetScreenSize()
-    local logs = (activeTab == "changelog") and changelog or lua_changelog
+
+    -- select the appropriate changelog based on active tab
+    local logs
+    if activeTab == "stable" then
+        logs = changelog
+    elseif activeTab == "beta" then
+        logs = beta_changelog
+    else
+        logs = lua_changelog
+    end
 
     -- measure text total needed for window size
     local content_width, content_height = 0, 0
@@ -68,7 +80,7 @@ callbacks.Register("Draw", "changelog_window", function ()
     draw.FilledRect(win_x + win_w - 2, win_y, win_x + win_w, win_y + win_h) -- right
 
     -- tabs
-    local tabs = {"changelog", "lua"}
+    local tabs = {"stable", "beta", "lua"}
     local tab_w, tab_h = 80, 20
     local tab_x = win_x + 5
     local tab_y = win_y - 19
