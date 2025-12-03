@@ -9,7 +9,7 @@ return {
 		"Aimbot FOV priority to use the target's current position instead of a predicted one",
 		"Lua API so that custom glow effects work correctly",
 		"Changed",
-		"Local Lua scripts directory now defaults to %localappdata%\\lua\",
+		"Local Lua scripts directory now defaults to %localappdata%\\lua",
 		"Demoknight melee mode activates only when a shield is equipped",
 		"Auto-Vaccinator prioritises bullet resistance over fire resistance when both heavy and pyro are nearby",
 		"Anti-Aim indicator now displays the yaw 90 angle difference limit accurately",
