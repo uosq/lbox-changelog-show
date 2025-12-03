@@ -1,6 +1,6 @@
 return {
 	{
-		"3rd Dec 2025",
+		"Dec 3 2025",
 		"Added",
 		"Lua 'Store' - Download community Lua scripts and customisations with a single click",
 		"Custom quality option for crafting wearables via the Skinchanger",
@@ -24,7 +24,7 @@ return {
 	},
 
 	{
-		"31 Oct 2025",
+		"Oct 31 2025",
 		"Added support for crafting, equipping, and using taunts in the Skinchanger",
 		"Added Unbox Simulator in the Skinchanger to open crates and get unusuals",
 		"Added item preview when crafting hats or items in the Skinchanger",
