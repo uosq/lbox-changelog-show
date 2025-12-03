@@ -1,5 +1,21 @@
 return {
 	{
+		"3rd Dec 2025",
+		"Added",
+		"Lua 'Store' - Download community Lua scripts and customisations with a single click",
+		"Custom quality option for crafting wearables via the Skinchanger",
+		"Lobby-type selector (Casual, MvM, Rage) when sharing your lobby",
+		"Fixed",
+		"Aimbot FOV priority to use the target's current position instead of a predicted one",
+		"Lua API so that custom glow effects work correctly",
+		"Changed",
+		"Local Lua scripts directory now defaults to %localappdata%\\lua\",
+		"Demoknight melee mode activates only when a shield is equipped",
+		"Auto-Vaccinator prioritises bullet resistance over fire resistance when both heavy and pyro are nearby",
+		"Anti-Aim indicator now displays the yaw 90 angle difference limit accurately",
+	},
+
+	{
 		"Nov 11 2025 - Changelog View",
 		"Ignore if on Lmaobox Beta with the Store version",
 		"Changelog View has a new update",
