@@ -1,5 +1,10 @@
 return {
 	{
+		"Dec 10 2025",
+		"Fixed No-Recoil support for latest game update"
+	},
+
+	{
 		"Dec 3 2025",
 		"Added",
 		"Lua 'Store' - Download community Lua scripts and customisations with a single click",
