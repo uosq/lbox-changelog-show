@@ -1,5 +1,13 @@
 return {
 	{
+		"17th Dec 2025",
+		"Added separate Aim FOV option for projectile weapons",
+		"Changed ESP so it no longer renders on the class-selection screen",
+		"Changed Ammo/Medkit ESP so it no longer renders when local player is dead",
+		"Fixed Autoshoot regression from last update (thank you @cherance)",
+	},
+
+	{
 		"Dec 10 2025",
 		"Fixed No-Recoil support for latest game update"
 	},
